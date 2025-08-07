@@ -3,307 +3,449 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🇮🇩 MERDEKA CERIA!!! - MERDEKA SALE 2025 Campaign | Apotek Alpro Indonesia</title>
+    <title>MERDEKA CERIA!!! - MERDEKA SALE 2025 Campaign</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        * {
+        body {
             font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fee2e2 0%, #fef2f2 50%, #fee2e2 100%);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
         
-        .flag-gradient {
-            background: linear-gradient(135deg, #ff0000 0%, #ffffff 50%, #ff0000 100%);
+        .indonesia-red {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
         }
         
-        .red-gradient {
-            background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+        .indonesia-white {
+            background: #ffffff;
         }
         
-        .patriotic-shadow {
-            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.3);
+        .gold-accent {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
         }
         
-        .pulse-animation {
-            animation: pulse 2s infinite;
+        .shadow-custom {
+            box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);
         }
         
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
-        .bounce-animation {
-            animation: bounce 1s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-        
-        .interactive-card:hover {
-            transform: translateY(-5px);
+        .hover-transform {
             transition: all 0.3s ease;
         }
         
+        .hover-transform:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(220, 38, 38, 0.3);
+        }
+        
+        .btn-red {
+            background: linear-gradient(135deg, #dc2626, #ef4444);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-red:hover {
+            background: linear-gradient(135deg, #b91c1c, #dc2626);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+        }
+        
         .progress-bar {
-            background: linear-gradient(90deg, #dc2626, #ffffff, #dc2626);
-            background-size: 200% 100%;
-            animation: progress-slide 3s ease-in-out infinite;
+            background: #fee2e2;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
         }
         
-        @keyframes progress-slide {
-            0% { background-position: 200% 0; }
-            100% { background-position: -200% 0; }
+        .progress-fill {
+            background: linear-gradient(90deg, #dc2626, #ef4444);
+            height: 100%;
+            border-radius: 4px;
+            animation: progress 2s ease-in-out;
         }
         
-        .festive-border {
-            border: 3px solid;
-            border-image: linear-gradient(45deg, #dc2626, #ffffff, #dc2626, #ffffff) 1;
+        @keyframes progress {
+            0% { width: 0%; }
+            100% { width: var(--width); }
         }
         
-        .countdown-timer {
-            background: conic-gradient(from 0deg, #dc2626, #ffffff, #dc2626);
+        .badge {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
         }
         
-        .prize-glow {
-            box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+        .card-3d {
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+        }
+        
+        .card-3d:hover {
+            transform: rotateY(5deg) rotateX(5deg);
         }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Header Section -->
-    <div class="flag-gradient p-8 text-center relative overflow-hidden">
+<body>
+    <!-- Header Banner -->
+    <div class="indonesia-red text-white py-12 relative overflow-hidden">
         <div class="absolute inset-0 opacity-20">
-            <div class="flex justify-center items-center h-full">
-                <i class="fas fa-flag text-9xl text-red-600"></i>
-            </div>
+            <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/373cc3a1-76c3-460e-8e35-521c110011a2" 
+                 alt="Indonesian Flag Background" class="w-full h-full object-cover">
         </div>
-        <div class="relative z-10">
-            <h1 class="text-5xl font-black text-red-700 mb-4 bounce-animation">
-                🇮🇩 MERDEKA CERIA!!! 🇮🇩
-            </h1>
-            <div class="bg-white bg-opacity-90 rounded-2xl p-6 patriotic-shadow inline-block">
-                <h2 class="text-3xl font-bold text-red-600 mb-2">MERDEKA SALE 2025</h2>
-                <p class="text-lg text-gray-700 font-semibold">Campaign Spesial Kemerdekaan Indonesia ke-80</p>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-flex items-center gap-4 mb-4">
+                <i class="fas fa-flag text-4xl"></i>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-wider">MERDEKA CERIA!!!</h1>
+                <i class="fas fa-flag text-4xl"></i>
+            </div>
+            <div class="gold-accent text-white p-6 rounded-2xl shadow-custom inline-block">
+                <h2 class="text-2xl md:text-3xl font-bold mb-2">MERDEKA SALE 2025</h2>
+                <p class="text-lg">Campaign Spesial Kemerdekaan Indonesia ke-80</p>
             </div>
         </div>
     </div>
 
-    <!-- Greeting Section -->
-    <div class="container mx-auto px-6 py-8">
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 festive-border">
-            <div class="text-center mb-6">
-                <h3 class="text-2xl font-bold text-red-600 mb-4">Dear Seluruh Alproeans!</h3>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    Memasuki bulan Agustus yang penuh semangat kemerdekaan, kami hadir dengan campaign spesial: 
-                    <span class="font-bold text-red-600">Merdeka Sale 2025 yang Penuh Ceria</span> – sebuah program nasional 
-                    yang akan menghidupkan semangat belanja, promosi, dan pelayanan di seluruh outlet 
-                    <span class="font-bold text-blue-600">Apotek Alpro Indonesia</span>.
-                </p>
+    <!-- Main Content Container -->
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        
+        <!-- Greeting Section -->
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8 border-l-8 border-red-500">
+            <h2 class="text-3xl font-bold text-red-600 mb-4 text-center">
+                <i class="fas fa-heart text-red-500 mr-2"></i>
+                Dear Seluruh Alproeans!
+            </h2>
+            <p class="text-gray-700 text-lg leading-relaxed text-center">
+                Memasuki bulan Agustus yang penuh semangat kemerdekaan, kami hadir dengan campaign spesial: 
+                <span class="font-bold text-red-600">Merdeka Sale 2025 yang Penuh Ceria</span> – sebuah program nasional yang akan 
+                menghidupkan semangat belanja, promosi, dan pelayanan di seluruh outlet 
+                <span class="font-bold text-red-600">Apotek Alpro Indonesia</span>.
+            </p>
+        </div>
+
+        <!-- E-Catalogue Section -->
+        <div class="bg-gradient-to-r from-red-50 to-white rounded-2xl shadow-custom p-8 mb-8 border border-red-100">
+            <div class="text-center mb-8">
+                <div class="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white px-6 py-3 rounded-full mb-4">
+                    <i class="fas fa-book-open text-xl"></i>
+                    <span class="font-bold text-xl">E-CATALOGUE MERDEKA SALE 2025</span>
+                </div>
+                <p class="text-gray-600 text-lg">Akses lengkap katalog promosi untuk semua tim outlet</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- View Online -->
+                <div class="bg-red-50 p-6 rounded-2xl text-center hover-transform">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-eye text-red-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">View Online</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Lihat katalog langsung di browser</p>
+                    <a href="https://apotekalpro.id/wp-content/uploads/2025/08/Promosi-Merdeka-09-18-Agustus-2025.pdf" 
+                       target="_blank" class="btn-red">
+                        <i class="fas fa-external-link-alt"></i>
+                        Lihat Sekarang
+                    </a>
+                </div>
+                
+                <!-- Download PDF -->
+                <div class="bg-yellow-50 p-6 rounded-2xl text-center hover-transform">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-download text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Download PDF</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Simpan untuk akses offline</p>
+                    <a href="https://apotekalpro.id/wp-content/uploads/2025/08/Promosi-Merdeka-09-18-Agustus-2025.pdf" 
+                       download class="btn-red">
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </a>
+                </div>
+                
+                <!-- Share -->
+                <div class="bg-green-50 p-6 rounded-2xl text-center hover-transform">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-share-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-800 mb-2">Share dengan Tim</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Bagikan ke seluruh tim outlet</p>
+                    <button onclick="navigator.share ? navigator.share({title: 'E-Catalogue Merdeka Sale 2025', url: 'https://apotekalpro.id/wp-content/uploads/2025/08/Promosi-Merdeka-09-18-Agustus-2025.pdf'}) : navigator.clipboard.writeText('https://apotekalpro.id/wp-content/uploads/2025/08/Promosi-Merdeka-09-18-Agustus-2025.pdf')" 
+                            class="btn-red">
+                        <i class="fas fa-share-alt"></i>
+                        Share Katalog
+                    </button>
+                </div>
             </div>
         </div>
 
-        <!-- Program Objectives -->
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 interactive-card">
-            <div class="flex items-center mb-6">
-                <div class="bg-red-600 rounded-full p-4 mr-4">
-                    <i class="fas fa-bullseye text-white text-2xl"></i>
+        <!-- Objective Program -->
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-target text-white text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-red-600">🎯 1. OBJECTIVE PROGRAM</h3>
+                <h2 class="text-3xl font-bold text-gray-800">1. OBJECTIVE PROGRAM</h2>
             </div>
-            <div class="bg-red-50 rounded-2xl p-6">
-                <p class="text-lg font-semibold text-gray-700 mb-4">
-                    Dalam rangka menyambut Hari Kemerdekaan Indonesia ke-80, Apotek Alpro mengadakan program 
-                    <span class="text-red-600 font-bold">MERDEKA SALE 2025</span> yang bertujuan:
-                </p>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-xl patriotic-shadow interactive-card">
-                        <i class="fas fa-chart-line text-red-600 text-3xl mb-4"></i>
-                        <h4 class="font-bold text-gray-800 mb-2">Meningkatkan Transaksi Penjualan</h4>
-                        <p class="text-gray-600">Selama periode Promo Merdeka</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl patriotic-shadow interactive-card">
-                        <i class="fas fa-users text-red-600 text-3xl mb-4"></i>
-                        <h4 class="font-bold text-gray-800 mb-2">Meningkatkan Traffic Kunjungan</h4>
-                        <p class="text-gray-600">Ke outlet selama periode kemerdekaan</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl patriotic-shadow interactive-card">
-                        <i class="fas fa-star text-red-600 text-3xl mb-4"></i>
-                        <h4 class="font-bold text-gray-800 mb-2">Meningkatkan Brand Awareness</h4>
-                        <p class="text-gray-600">Dengan Campaign Merdeka Sale</p>
-                    </div>
+            
+            <p class="text-gray-700 mb-6 text-lg">
+                Dalam rangka menyambut Hari Kemerdekaan Indonesia ke-80, Apotek Alpro mengadakan program 
+                <span class="font-bold text-red-600">MERDEKA SALE 2025</span> yang bertujuan:
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                    <i class="fas fa-chart-line text-red-500 text-2xl mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Meningkatkan Transaksi Penjualan</h3>
+                    <p class="text-gray-600 text-sm">Selama periode Promo Merdeka</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                    <i class="fas fa-users text-blue-500 text-2xl mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Meningkatkan Traffic Kunjungan</h3>
+                    <p class="text-gray-600 text-sm">Ke outlet selama periode kemerdekaan</p>
+                </div>
+                
+                <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                    <i class="fas fa-bullhorn text-yellow-600 text-2xl mb-3"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Meningkatkan Brand Awareness</h3>
+                    <p class="text-gray-600 text-sm">Dengan Campaign Merdeka Sale</p>
                 </div>
             </div>
         </div>
 
         <!-- Program Details -->
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 interactive-card">
-            <div class="flex items-center mb-6">
-                <div class="bg-red-600 rounded-full p-4 mr-4">
-                    <i class="fas fa-calendar-alt text-white text-2xl"></i>
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-calendar-alt text-white text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-red-600">📆 2. DETAIL PROGRAM</h3>
+                <h2 class="text-3xl font-bold text-gray-800">2. DETAIL PROGRAM</h2>
             </div>
+            
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-red-50 rounded-2xl p-6">
-                    <h4 class="text-xl font-bold text-red-600 mb-4">Program Coverage</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <i class="fas fa-store text-red-600 mr-3"></i>
-                            <span>Berlaku di seluruh Apotek Alpro & Apotek Alpro Express</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-users text-red-600 mr-3"></i>
-                            <span>Target member campaign: <strong>400.000 member aktif</strong></span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-calendar text-red-600 mr-3"></i>
-                            <span>Periode program: <strong>9-18 Agustus 2025</strong></span>
-                        </li>
-                    </ul>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 p-4 bg-red-50 rounded-xl">
+                        <i class="fas fa-store text-red-500 text-xl"></i>
+                        <span class="text-gray-700">Berlaku di seluruh <strong>Apotek Alpro & Apotek Alpro Express</strong></span>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 p-4 bg-blue-50 rounded-xl">
+                        <i class="fas fa-users text-blue-500 text-xl"></i>
+                        <span class="text-gray-700">Target member campaign: <strong>400.000 member aktif</strong></span>
+                    </div>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-red-200">
-                    <h4 class="text-xl font-bold text-red-600 mb-4">Quick Access Links</h4>
-                    <div class="space-y-3">
-                        <a href="https://docs.google.com/spreadsheets/d/11wxuI4D_sH6L7szFdQo1RNlkUbCaT8pl/edit?usp=sharing&ouid=105499691915285480240&rtpof=true&sd=true" 
-                           class="flex items-center bg-red-600 text-white p-3 rounded-lg hover:bg-red-700 transition-colors">
-                            <i class="fas fa-list-alt mr-3"></i>
-                            <span>List Promo Merdeka Sale</span>
-                        </a>
-                        <a href="https://docs.google.com/spreadsheets/d/11LTFyBZ025SQJNQdEqOdVBXoaCJjepFiLDaf-vkdkqw/edit?usp=sharing" 
-                           class="flex items-center bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
-                            <i class="fas fa-chart-bar mr-3"></i>
-                            <span>Target National Day 10 HARI 2025</span>
-                        </a>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3 p-4 bg-green-50 rounded-xl">
+                        <i class="fas fa-calendar text-green-600 text-xl"></i>
+                        <span class="text-gray-700">Periode program: <strong>9-18 Agustus 2025</strong></span>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 p-4 bg-yellow-50 rounded-xl">
+                        <i class="fas fa-list text-yellow-600 text-xl"></i>
+                        <span class="text-gray-700">List Promo tersedia di <strong>E-Catalogue</strong></span>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Competition Alert -->
-        <div class="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl p-8 text-white mb-8 pulse-animation">
-            <div class="text-center">
-                <i class="fas fa-fire text-6xl mb-4 text-yellow-300"></i>
-                <h3 class="text-3xl font-black mb-4">🚨 Panggilan untuk seluruh outlet!</h3>
-                <div class="bg-white bg-opacity-20 rounded-2xl p-6 mb-4">
-                    <p class="text-xl font-bold mb-2">Siap saingan sehat untuk rebut gelar OUTLET TERCUAN?</p>
-                    <p class="text-lg mb-2">Siapa yang mau ambil EXTRA BONUS Selama 10 Hari?</p>
-                    <p class="text-lg">Yuk, capai target harian, menangkan bonus, dan jadilah inspirasi nasional!</p>
+        <div class="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-2xl shadow-custom p-8 mb-8 text-center">
+            <div class="mb-6">
+                <i class="fas fa-trophy text-6xl mb-4 text-yellow-300"></i>
+                <h2 class="text-4xl font-bold mb-4">🚨 Panggilan untuk seluruh outlet!</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white bg-opacity-20 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Siap saingan sehat untuk rebut gelar</h3>
+                    <div class="text-3xl font-bold text-yellow-300">OUTLET TERCUAN?</div>
                 </div>
-                <div class="text-2xl font-black text-yellow-300">
-                    Kompetisi PANAS = Semangat membara = CUAN maksimal!
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Siapa yang mau ambil</h3>
+                    <div class="text-3xl font-bold text-yellow-300">EXTRA BONUS</div>
+                    <p>Selama 10 Hari?</p>
                 </div>
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-2">Yuk, capai target harian</h3>
+                    <div class="text-2xl font-bold text-yellow-300">menangkan bonus &amp; jadilah inspirasi nasional!</div>
+                </div>
+            </div>
+            
+            <div class="mt-8">
+                <p class="text-2xl font-bold">Kompetisi PANAS = Semangat membara = CUAN maksimal!</p>
             </div>
         </div>
 
         <!-- Sales Target -->
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 interactive-card">
-            <div class="flex items-center mb-6">
-                <div class="bg-green-600 rounded-full p-4 mr-4">
-                    <i class="fas fa-target text-white text-2xl"></i>
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-chart-bar text-white text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-green-600">📆 3. TARGET NATIONAL DAY 9-18 Agustus 2025</h3>
+                <h2 class="text-3xl font-bold text-gray-800">3. TARGET NATIONAL DAY 9-18 Agustus 2025</h2>
             </div>
+            
+            <div class="text-center mb-8">
+                <img src="https://cdn1.genspark.ai/user-upload-image/gpt_image_generated/174b2d06-30ef-4719-a220-761a22854e22" 
+                     alt="Sales Target Visualization" class="w-full max-w-4xl mx-auto rounded-2xl shadow-lg">
+            </div>
+            
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-green-50 rounded-2xl p-6">
-                    <h4 class="text-2xl font-bold text-green-600 mb-4">Target Nasional</h4>
-                    <div class="text-center">
-                        <div class="text-5xl font-black text-green-600 mb-2">Rp. 12 Miliar</div>
-                        <div class="text-lg text-gray-600">selama 10 hari</div>
-                        <div class="mt-4 bg-green-200 rounded-full h-4">
-                            <div class="progress-bar h-4 rounded-full w-0" id="target-progress"></div>
-                        </div>
+                <div class="bg-red-50 p-6 rounded-2xl text-center">
+                    <i class="fas fa-bullseye text-red-500 text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Target Total</h3>
+                    <div class="text-4xl font-bold text-red-600 mb-2">Rp. 12 Miliar</div>
+                    <p class="text-gray-600">Selama 10 hari</p>
+                    <div class="progress-bar mt-4">
+                        <div class="progress-fill" style="--width: 85%;"></div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl p-6 border-2 border-green-200">
-                    <h4 class="text-xl font-bold text-green-600 mb-4">Target Daily Average</h4>
-                    <div class="text-center">
-                        <i class="fas fa-calendar-day text-green-600 text-4xl mb-4"></i>
-                        <div class="text-3xl font-bold text-green-600">Rp. 1.2 Miliar</div>
-                        <div class="text-gray-600">per hari</div>
+                
+                <div class="bg-blue-50 p-6 rounded-2xl text-center">
+                    <i class="fas fa-calendar-day text-blue-500 text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Target Harian</h3>
+                    <div class="text-4xl font-bold text-blue-600 mb-2">Rp. 1.2 Miliar</div>
+                    <p class="text-gray-600">Per hari</p>
+                    <div class="progress-bar mt-4">
+                        <div class="progress-fill" style="--width: 70%;"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sales Incentives Section -->
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">
+                    <i class="fas fa-money-bill-wave text-green-500 mr-2"></i>
+                    UP TO EXTRA SALES INCENTIVES REWARD untuk 10 hari ini!
+                </h2>
+                <img src="https://page.gensparksite.com/v1/base64_upload/746dcdbbd7f11f3d91ca0062447163e2" 
+                     alt="Sales Incentives Levels" class="w-full max-w-4xl mx-auto rounded-2xl shadow-lg">
+                <div class="mt-6 bg-gray-100 p-4 rounded-xl">
+                    <p class="text-gray-700 font-semibold">
+                        <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                        T&S: Nationwide hit 90% dari total 12M = 10.8M dalam 10 hari!
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Special Programs -->
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 interactive-card">
-            <div class="flex items-center mb-6">
-                <div class="bg-purple-600 rounded-full p-4 mr-4">
-                    <i class="fas fa-gift text-white text-2xl"></i>
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-gift text-white text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-purple-600">🎯 4. PROGRAM SPECIAL MERDEKA SALE</h3>
+                <h2 class="text-3xl font-bold text-gray-800">4. PROGRAM SPECIAL MERDEKA SALE</h2>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-gradient-to-br from-yellow-400 to-orange-500 p-6 rounded-xl text-white interactive-card prize-glow">
-                    <i class="fas fa-leaf text-3xl mb-4"></i>
-                    <h4 class="font-bold text-lg mb-2">Give Away</h4>
-                    <p class="text-sm">BELI & MENANGKAN - NATURE E</p>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-yellow-400 to-yellow-600 p-6 rounded-2xl text-white card-3d hover-transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-trophy text-3xl"></i>
+                        <h3 class="text-xl font-bold">Program Give Away</h3>
+                    </div>
+                    <p class="text-lg font-semibold">BELI &amp; MENANGKAN - NATURE E</p>
+                    <div class="badge bg-white text-yellow-600 mt-3">TOP SPENDER</div>
                 </div>
-                <div class="bg-gradient-to-br from-red-500 to-pink-600 p-6 rounded-xl text-white interactive-card">
-                    <i class="fas fa-tag text-3xl mb-4"></i>
-                    <h4 class="font-bold text-lg mb-2">Serba 17K</h4>
-                    <p class="text-sm">Produk Pilihan Harga Spesial</p>
-                </div>
-                <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-6 rounded-xl text-white interactive-card">
-                    <i class="fas fa-tags text-3xl mb-4"></i>
-                    <h4 class="font-bold text-lg mb-2">Serba 80K</h4>
-                    <p class="text-sm">Produk Pilihan Premium</p>
-                </div>
-                <div class="bg-gradient-to-br from-green-500 to-teal-600 p-6 rounded-xl text-white interactive-card">
-                    <i class="fas fa-percent text-3xl mb-4"></i>
-                    <h4 class="font-bold text-lg mb-2">Discount</h4>
-                    <p class="text-sm">Up to 45% Produk Pilihan</p>
+                
+                <div class="bg-gradient-to-br from-green-500 to-green-700 p-6 rounded-2xl text-white card-3d hover-transform">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fas fa-tags text-3xl"></i>
+                        <h3 class="text-xl font-bold">Buy 1 Get 1</h3>
+                    </div>
+                    <p class="text-lg">Produk Pilihan Spesial</p>
+                    <div class="badge bg-white text-green-600 mt-3">DOUBLE UNTUNG</div>
                 </div>
             </div>
-            <div class="mt-6 bg-red-50 rounded-2xl p-6 text-center">
-                <div class="text-4xl font-bold text-red-600 mb-2">BUY 1 GET 1</div>
-                <p class="text-gray-700">Promosi Spesial untuk Produk Terpilih</p>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-red-500 text-white p-6 rounded-2xl text-center hover-transform">
+                    <i class="fas fa-fire text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">SERBA 17K</h3>
+                    <p class="mb-4">Produk Pilihan Spesial</p>
+                    <div class="text-3xl font-bold">Rp 17.000</div>
+                </div>
+                
+                <div class="bg-blue-500 text-white p-6 rounded-2xl text-center hover-transform">
+                    <i class="fas fa-star text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">SERBA 80K</h3>
+                    <p class="mb-4">Produk Premium Pilihan</p>
+                    <div class="text-3xl font-bold">Rp 80.000</div>
+                </div>
+                
+                <div class="bg-purple-500 text-white p-6 rounded-2xl text-center hover-transform">
+                    <i class="fas fa-percentage text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">DISCOUNT</h3>
+                    <p class="mb-4">Produk Terpilih</p>
+                    <div class="text-3xl font-bold">Up to 45%</div>
+                </div>
             </div>
         </div>
 
         <!-- Customer Engagement -->
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 interactive-card">
-            <div class="flex items-center mb-6">
-                <div class="bg-pink-600 rounded-full p-4 mr-4">
-                    <i class="fas fa-heart text-white text-2xl"></i>
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-users text-white text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-pink-600">🎯 4. PROGRAM ENGAGEMENT CUSTOMER</h3>
+                <h2 class="text-3xl font-bold text-gray-800">PROGRAM ENGAGEMENT CUSTOMER</h2>
             </div>
             
-            <div class="bg-red-50 rounded-2xl p-6 mb-6">
-                <h4 class="text-2xl font-bold text-red-600 mb-4">3 Challenge Merdeka Like & Post 3 Teman</h4>
-                <div class="bg-white rounded-xl p-6">
-                    <div class="flex items-center mb-4">
-                        <i class="fas fa-gift text-red-600 text-2xl mr-3"></i>
-                        <span class="text-xl font-bold text-red-600">FREE VOUCHER 10K</span>
+            <div class="bg-red-50 p-8 rounded-2xl border border-red-200 mb-6">
+                <h3 class="text-2xl font-bold text-red-600 mb-4 text-center">
+                    <i class="fas fa-heart mr-2"></i>
+                    3 Challenge Merdeka Like &amp; Post 3 Teman - Free Voucher 10K
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-lg mb-3 text-red-600">
+                            <i class="fas fa-clipboard-list mr-2"></i>Syarat &amp; Ketentuan:
+                        </h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                Pelanggan menggunakan dresscode warna <strong>Merah Putih</strong>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                Free Voucher <strong>10K</strong> (Minimal pembelanjaan 50K)
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-green-500"></i>
+                                Masa expired voucher: <strong>31 Agustus 2025</strong>
+                            </li>
+                        </ul>
                     </div>
                     
-                    <h5 class="font-bold text-gray-800 mb-3">Syarat & Ketentuan:</h5>
-                    <ul class="space-y-2 mb-4">
-                        <li class="flex items-start">
-                            <i class="fas fa-tshirt text-red-600 mr-3 mt-1"></i>
-                            <span>Pelanggan menggunakan Dresscode Warna Merah Putih atau bernuansa merah putih</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-shopping-bag text-red-600 mr-3 mt-1"></i>
-                            <span>Free Voucher 10K (Minimal pembelanjaan 50K)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-calendar-times text-red-600 mr-3 mt-1"></i>
-                            <span>Masa Expired Voucher: <strong>31 Agustus 2025</strong></span>
-                        </li>
-                    </ul>
-                    
-                    <div class="bg-red-100 rounded-xl p-4">
-                        <h6 class="font-bold text-red-600 mb-2">Caranya 👍</h6>
-                        <ol class="list-decimal list-inside space-y-2">
-                            <li>Pelanggan Menggunakan Dresscode Merah-putih atau yang bernuansa Merah atau putih (tas, sepatu & lain-lain)</li>
-                            <li>Like & repost dan @3 teman sosial media: Family, Kerabat, saudara, rekan kerja Kantor, atau lainnya</li>
+                    <div>
+                        <h4 class="font-bold text-lg mb-3 text-blue-600">
+                            <i class="fas fa-thumbs-up mr-2"></i>Caranya:
+                        </h4>
+                        <ol class="space-y-2 text-gray-700 list-decimal list-inside">
+                            <li>Menggunakan dresscode Merah-putih atau bernuansa Merah/Putih (tas, sepatu, dll)</li>
+                            <li>Like &amp; repost dan @3 teman di sosial media</li>
+                            <li>Tag: Family, Kerabat, Saudara, Rekan Kerja, atau lainnya</li>
                         </ol>
                     </div>
                 </div>
@@ -311,241 +453,246 @@
         </div>
 
         <!-- TikTok Challenge -->
-        <div class="bg-gradient-to-r from-pink-500 to-purple-600 rounded-3xl p-8 text-white mb-8 interactive-card">
+        <div class="bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-2xl shadow-custom p-8 mb-8">
             <div class="text-center mb-8">
                 <i class="fab fa-tiktok text-6xl mb-4"></i>
-                <h3 class="text-3xl font-bold mb-2">🎯 5. TikTok Affiliate Merdeka Challenge</h3>
+                <h2 class="text-4xl font-bold mb-2">TikTok Affiliate Merdeka Challenge</h2>
                 <p class="text-xl">📆 Periode: 9 – 18 Agustus 2025</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-6 mb-6">
-                <div class="bg-white bg-opacity-20 rounded-xl p-6 text-center interactive-card">
-                    <div class="text-3xl font-bold mb-2">🥇 Pemenang 1</div>
-                    <div class="text-4xl font-black text-yellow-300 mb-2">Rp. 1.000.000</div>
-                    <p class="text-sm">Top Up payroll di bulan Agustus 2025</p>
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white bg-opacity-20 p-6 rounded-2xl text-center">
+                    <i class="fas fa-medal text-yellow-400 text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold">Pemenang 1</h3>
+                    <div class="text-3xl font-bold text-yellow-400">Rp 1.000.000</div>
+                    <p class="text-sm mt-2">Top Up payroll Agustus 2025</p>
                 </div>
-                <div class="bg-white bg-opacity-20 rounded-xl p-6 text-center interactive-card">
-                    <div class="text-3xl font-bold mb-2">🥈 Pemenang 2</div>
-                    <div class="text-4xl font-black text-gray-200 mb-2">Rp. 700.000</div>
-                    <p class="text-sm">Top Up payroll di bulan Agustus 2025</p>
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-2xl text-center">
+                    <i class="fas fa-medal text-gray-300 text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold">Pemenang 2</h3>
+                    <div class="text-3xl font-bold text-gray-300">Rp 700.000</div>
+                    <p class="text-sm mt-2">Top Up payroll Agustus 2025</p>
                 </div>
-                <div class="bg-white bg-opacity-20 rounded-xl p-6 text-center interactive-card">
-                    <div class="text-3xl font-bold mb-2">🥉 Pemenang 3</div>
-                    <div class="text-4xl font-black text-orange-300 mb-2">Rp. 500.000</div>
-                    <p class="text-sm">Top Up payroll di bulan Agustus 2025</p>
+                
+                <div class="bg-white bg-opacity-20 p-6 rounded-2xl text-center">
+                    <i class="fas fa-medal text-orange-400 text-4xl mb-3"></i>
+                    <h3 class="text-xl font-bold">Pemenang 3</h3>
+                    <div class="text-3xl font-bold text-orange-400">Rp 500.000</div>
+                    <p class="text-sm mt-2">Top Up payroll Agustus 2025</p>
                 </div>
             </div>
             
             <div class="text-center">
-                <p class="text-xl font-bold mb-4">Caranya Gampang bangett👍</p>
-                <div class="bg-white bg-opacity-20 rounded-xl p-4 inline-block">
-                    <p class="mb-2">Bisa klik di link:</p>
-                    <button class="bg-white text-pink-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors">
-                        T&C Tiktok Challenge Merdeka Sale
-                    </button>
-                </div>
+                <p class="text-2xl font-bold mb-4">Caranya Gampang banget 👍</p>
+                <a href="#" class="btn-red bg-white text-purple-600 hover:bg-gray-100">
+                    <i class="fas fa-link"></i>
+                    T&C TikTok Challenge Merdeka Sale
+                </a>
             </div>
         </div>
 
         <!-- Work Instructions -->
-        <div class="bg-white rounded-3xl p-8 patriotic-shadow mb-8 interactive-card">
-            <div class="flex items-center mb-6">
-                <div class="bg-indigo-600 rounded-full p-4 mr-4">
-                    <i class="fas fa-clipboard-list text-white text-2xl"></i>
+        <div class="bg-white rounded-2xl shadow-custom p-8 mb-8">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-clipboard-check text-white text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-bold text-indigo-600">📋 INSTRUKSI KERJA PROGRAM MERDEKA SALE 2025</h3>
+                <h2 class="text-3xl font-bold text-gray-800">📋 INSTRUKSI KERJA PROGRAM MERDEKA SALE 2025</h2>
             </div>
             
-            <div class="bg-indigo-50 rounded-2xl p-6 mb-6">
-                <div class="text-center mb-6">
-                    <h4 class="text-2xl font-bold text-indigo-600">📅 Periode: 9 -18 Agustus 2025</h4>
-                    <p class="text-lg text-gray-700">Agar semuanya berjalan mulus, kami butuh peran AM aktif di lapangan. Yuk simak poin-poin penting berikut ini:</p>
+            <div class="bg-blue-50 p-6 rounded-2xl mb-8">
+                <div class="flex items-center gap-3 mb-4">
+                    <i class="fas fa-calendar-alt text-blue-600 text-2xl"></i>
+                    <h3 class="text-2xl font-bold text-blue-600">📅 Periode: 9 - 18 Agustus 2025</h3>
                 </div>
+                <p class="text-gray-700 text-lg">
+                    Agar semuanya berjalan mulus, kami butuh peran AM aktif di lapangan. Yuk simak poin-poin penting berikut ini:
+                </p>
             </div>
 
             <!-- Leaflet Distribution -->
-            <div class="bg-blue-50 rounded-2xl p-6 mb-6">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-file-alt text-blue-600 text-2xl mr-3"></i>
-                    <h4 class="text-2xl font-bold text-blue-600">📦 Distribusi Leaflet A2 Merdeka Sale</h4>
-                </div>
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-file-alt text-red-500"></i>
+                    📦 Distribusi Leaflet A2 Merdeka Sale
+                </h3>
                 
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-xl p-6">
-                        <h5 class="font-bold text-gray-800 mb-3">Timeline & Distribusi</h5>
-                        <ul class="space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-truck text-blue-600 mr-2 mt-1"></i>
-                                <span>Leaflet akan dikirim ke seluruh lokasi Buddy Store dengan estimasi tiba pada <strong>5-6 Agustus 2025</strong></span>
+                <div class="grid md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
+                        <h4 class="font-bold text-gray-800 mb-3">Jadwal Distribusi</h4>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-truck text-green-600"></i>
+                                Leaflet akan dikirim ke seluruh lokasi Buddy Store
                             </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-store text-blue-600 mr-2 mt-1"></i>
-                                <span>Distribusi melalui Buddy store masing-masing</span>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-calendar text-green-600"></i>
+                                Estimasi tiba: <strong>5-6 Agustus 2025</strong>
                             </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-copy text-blue-600 mr-2 mt-1"></i>
-                                <span>Setiap Outlet akan menerima <strong>350 pcs leaflet Merdeka Sale</strong></span>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-boxes text-green-600"></i>
+                                Setiap Outlet: <strong>350 pcs leaflet</strong>
                             </li>
                         </ul>
                     </div>
                     
-                    <div class="bg-white rounded-xl p-6">
-                        <h5 class="font-bold text-gray-800 mb-3">Instruksi Pelaksanaan</h5>
-                        <ul class="space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-walking text-blue-600 mr-2 mt-1"></i>
-                                <span>Pastikan setiap Customer Walk-in mendapatkan leaflet dan dijelaskan Promo & Hadiah</span>
+                    <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
+                        <h4 class="font-bold text-gray-800 mb-3">Pentingnya Flyering</h4>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-handshake text-yellow-600"></i>
+                                Interaksi langsung dengan customer
                             </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-star text-blue-600 mr-2 mt-1"></i>
-                                <span>*Promosi hanya berlaku untuk <strong>Member Alpro</strong></span>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-user-plus text-yellow-600"></i>
+                                Menjelaskan manfaat menjadi member
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-bullhorn text-yellow-600"></i>
+                                Promosi program lebih efektif dan persuasif
                             </li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="bg-yellow-100 border-l-4 border-yellow-500 p-4 mt-6">
-                    <div class="flex items-start">
-                        <i class="fas fa-lightbulb text-yellow-600 text-xl mr-3 mt-1"></i>
-                        <div>
-                            <h6 class="font-bold text-yellow-800 mb-2">Kenapa ini penting Flyering?</h6>
-                            <p class="text-yellow-700">
-                                Karena tim dapat berinteraksi secara langsung menjelaskan manfaat menjadi member serta 
-                                mempromosikan program Merdeka Sale lebih efektif dan persuasif
-                            </p>
-                        </div>
-                    </div>
+                
+                <div class="bg-red-50 p-6 rounded-xl border border-red-200">
+                    <h4 class="font-bold text-red-600 mb-3 flex items-center gap-2">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Penting: Pastikan setiap Customer Walk-in
+                    </h4>
+                    <ul class="text-gray-700 space-y-2">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-red-500"></i>
+                            Mendapatkan leaflet dan dijelaskan Promo & Hadiah
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-star text-red-500"></i>
+                            <strong>Promosi hanya berlaku untuk Member Alpro</strong>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Low Performance Strategy -->
-            <div class="bg-orange-50 rounded-2xl p-6 mb-6">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-chart-line text-orange-600 text-2xl mr-3"></i>
-                    <h4 class="text-2xl font-bold text-orange-600">📉 Strategi untuk Outlet dengan Performa Low Trano</h4>
-                </div>
+            <!-- Strategy for Low Performance -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-chart-line text-orange-500"></i>
+                    📉 Strategi untuk Outlet dengan Performa Low Trano
+                </h3>
                 
-                <p class="text-gray-700 mb-4">
-                    Jika performa outlet rendah dan stok leaflet masih banyak, lakukan distribusi tambahan ke lokasi 
-                    area publik untuk menjangkau lebih banyak calon member.
-                </p>
-                
-                <div class="bg-white rounded-xl p-6">
-                    <h5 class="font-bold text-orange-600 mb-3">👉 Rekomendasi Lokasi Distribusi Leaflet Merdeka Sale:</h5>
+                <div class="bg-orange-50 p-6 rounded-xl border-l-4 border-orange-500">
+                    <p class="text-gray-700 mb-4">
+                        Jika performa outlet rendah dan stok leaflet masih banyak, lakukan 
+                        <strong>distribusi tambahan ke lokasi area publik</strong> untuk menjangkau lebih banyak calon member.
+                    </p>
+                    
+                    <h4 class="font-bold text-gray-800 mb-3">👉 Rekomendasi Lokasi Distribusi Leaflet Merdeka Sale:</h4>
+                    
                     <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-orange-100 p-4 rounded-lg">
-                            <i class="fas fa-map-marker-alt text-orange-600 text-xl mb-2"></i>
-                            <h6 class="font-bold text-gray-800 mb-1">Tempat Umum</h6>
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-map-marker-alt text-blue-500 text-xl mb-2"></i>
+                            <h5 class="font-bold text-gray-800 mb-1">Tempat Umum</h5>
                             <p class="text-sm text-gray-600">Halte, taman, minimarket, dll.</p>
                         </div>
-                        <div class="bg-orange-100 p-4 rounded-lg">
-                            <i class="fas fa-utensils text-orange-600 text-xl mb-2"></i>
-                            <h6 class="font-bold text-gray-800 mb-1">Restoran & Kafe</h6>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-utensils text-green-600 text-xl mb-2"></i>
+                            <h5 class="font-bold text-gray-800 mb-1">Restoran & Kafe</h5>
                             <p class="text-sm text-gray-600">Utamakan tempat dengan traffic tinggi</p>
                         </div>
-                        <div class="bg-orange-100 p-4 rounded-lg">
-                            <i class="fas fa-building text-orange-600 text-xl mb-2"></i>
-                            <h6 class="font-bold text-gray-800 mb-1">Corporate Visit</h6>
-                            <p class="text-sm text-gray-600">Klinik kecantikan, klinik gigi, bank, dan institusi lainnya</p>
+                        
+                        <div class="bg-white p-4 rounded-lg shadow-sm">
+                            <i class="fas fa-building text-purple-600 text-xl mb-2"></i>
+                            <h5 class="font-bold text-gray-800 mb-1">Corporate Visit</h5>
+                            <p class="text-sm text-gray-600">Klinik kecantikan, klinik gigi, bank, institusi</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Documentation Requirements -->
-            <div class="bg-green-50 rounded-2xl p-6">
-                <div class="flex items-center mb-4">
-                    <i class="fas fa-camera text-green-600 text-2xl mr-3"></i>
-                    <h4 class="text-2xl font-bold text-green-600">📸 Dokumentasi Wajib</h4>
-                </div>
+            <!-- Documentation -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                    <i class="fas fa-camera text-blue-500"></i>
+                    📸 Dokumentasi Wajib
+                </h3>
                 
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-xl p-6">
-                        <h5 class="font-bold text-green-600 mb-3">Requirements</h5>
-                        <ul class="space-y-2">
-                            <li class="flex items-start">
-                                <i class="fas fa-photo-video text-green-600 mr-2 mt-1"></i>
-                                <span>Mohon dokumentasikan seluruh aktivitas distribusi (baik di outlet maupun di luar)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl p-6">
-                        <h5 class="font-bold text-green-600 mb-3">Upload Location</h5>
-                        <ul class="space-y-2">
-                            <li class="flex items-start">
-                                <i class="fab fa-facebook text-green-600 mr-2 mt-1"></i>
-                                <span>Upload dokumentasi ke <strong>Group FB Kaizen</strong> sebagai referensi dan inspirasi bagi Outlet lain</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+                    <ul class="text-gray-700 space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fas fa-camera text-blue-600 text-xl"></i>
+                            <span>Mohon dokumentasikan <strong>seluruh aktivitas distribusi</strong> (baik di outlet maupun di luar)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fab fa-facebook text-blue-600 text-xl"></i>
+                            <span>Upload dokumentasi ke <strong>Group FB Kaizen</strong> sebagai referensi dan inspirasi bagi Outlet lain</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Footer -->
-        <div class="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl p-8 text-white text-center">
+        <!-- Footer CTA -->
+        <div class="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-2xl shadow-custom p-8 text-center">
             <div class="mb-6">
-                <i class="fas fa-flag text-6xl text-yellow-300 mb-4"></i>
-                <h3 class="text-3xl font-bold mb-2">Mari Bersama Meraih Kesuksesan!</h3>
-                <p class="text-xl">Semangat Merdeka, Semangat Berprestasi!</p>
+                <i class="fas fa-flag text-6xl mb-4 text-yellow-300"></i>
+                <h2 class="text-4xl font-bold mb-4">Mari Wujudkan Target Bersama!</h2>
+                <p class="text-xl mb-6">Rp 12 Miliar dalam 10 Hari - Kita Pasti Bisa! 🇮🇩</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-6 mb-6">
-                <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                    <i class="fas fa-trophy text-yellow-300 text-3xl mb-2"></i>
-                    <p class="font-bold">Raih Target</p>
-                </div>
-                <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                    <i class="fas fa-handshake text-yellow-300 text-3xl mb-2"></i>
-                    <p class="font-bold">Kerjasama Tim</p>
-                </div>
-                <div class="bg-white bg-opacity-20 rounded-xl p-4">
-                    <i class="fas fa-star text-yellow-300 text-3xl mb-2"></i>
-                    <p class="font-bold">Pelayanan Prima</p>
-                </div>
-            </div>
-            
-            <div class="text-2xl font-bold">
-                🇮🇩 DIRGAHAYU INDONESIA KE-80! 🇮🇩
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://apotekalpro.id/wp-content/uploads/2025/08/Promosi-Merdeka-09-18-Agustus-2025.pdf" 
+                   target="_blank" class="btn-red bg-white text-red-600 hover:bg-gray-100">
+                    <i class="fas fa-book-open"></i>
+                    Lihat E-Catalogue
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/11LTFyBZ025SQJNQdEqOdVBXoaCJjepFiLDaf-vkdkqw/edit?usp=sharing" 
+                   target="_blank" class="btn-red bg-yellow-500 text-white hover:bg-yellow-600">
+                    <i class="fas fa-chart-bar"></i>
+                    Lihat Target Sales
+                </a>
             </div>
         </div>
     </div>
 
+    <!-- Success Toast -->
+    <div id="toast" class="fixed top-4 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+        <i class="fas fa-check-circle mr-2"></i>
+        <span>Link berhasil disalin!</span>
+    </div>
+
     <script>
-        // Add some interactivity
-        document.addEventListener('DOMContentLoaded', function() {
-            // Animate progress bar
-            const progressBar = document.getElementById('target-progress');
-            if (progressBar) {
+        // Share functionality
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-x-full');
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 3000);
+        }
+
+        // Copy to clipboard fallback
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('button[onclick*="navigator.clipboard"]')) {
                 setTimeout(() => {
-                    progressBar.style.width = '75%';
-                    progressBar.style.transition = 'width 2s ease-in-out';
-                }, 1000);
+                    showToast();
+                }, 100);
             }
-            
-            // Add hover effects to interactive cards
-            const cards = document.querySelectorAll('.interactive-card');
-            cards.forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                    this.style.transition = 'all 0.3s ease';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                });
+        });
+
+        // Progress bar animation on scroll
+        const progressBars = document.querySelectorAll('.progress-fill');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'progress 2s ease-in-out forwards';
+                }
             });
-            
-            // Countdown timer animation (you can customize this)
-            const countdownElements = document.querySelectorAll('.countdown-timer');
-            countdownElements.forEach(element => {
-                setInterval(() => {
-                    element.style.background = element.style.background === 'conic-gradient(from 0deg, #dc2626, #ffffff, #dc2626)' 
-                        ? 'conic-gradient(from 180deg, #dc2626, #ffffff, #dc2626)' 
-                        : 'conic-gradient(from 0deg, #dc2626, #ffffff, #dc2626)';
-                }, 2000);
-            });
+        });
+
+        progressBars.forEach(bar => {
+            observer.observe(bar);
         });
     </script>
 </body>
